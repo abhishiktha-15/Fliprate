@@ -34,7 +34,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/fliprate-currency-converter.git
+git clone https://github.com/abhishiktha-15/Fliprate
 cd fliprate-currency-converter
 
 # Create a virtual environment
