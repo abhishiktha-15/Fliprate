@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlipRate - Currency Converter</title>
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>💱 FlipRate - Currency Converter</h2>
+
+        <!-- Currency Conversion Form -->
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Convert</button>
+        </form>
+
+        <!-- Conversion Result or Error -->
+        {% if result %}
+            <div class="result">
+                Converted Amount: <strong>{{ result }}</strong>
+            </div>
+        {% elif error %}
+            <div class="error">
+                {{ error }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
