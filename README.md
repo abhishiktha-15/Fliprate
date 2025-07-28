@@ -6,7 +6,7 @@
 
 ## 📸 Screenshot
 
-![Screenshot](static/css/screenshot.jpg)
+![Screenshot](static/screenshot/screenshot.jpg)
 (Optional: Add a screenshot showing the UI)
 
 ---
